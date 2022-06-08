@@ -32,15 +32,19 @@ void Document::countFrequency(int ordinal) {
 
 	while (doc >> word) {
 		switch (ordinal) {
+		//handle the first document
 		case 1: {
+			//if the word does not exist in unordered_map, create new key
 			if (g_unorMap.find(word) == g_unorMap.end()) {
 				g_unorMap[word] = new Frequency{ 1,0 };
 			}
+			//if it exist, increase frequency by 1
 			else {
 				g_unorMap[word]->doc_1++;
 			}
 			break;
 		}
+		//handle the second document, similar the first one
 		case 2: {
 			if (g_unorMap.find(word) == g_unorMap.end()) {
 				g_unorMap[word] = new Frequency{ 0,1 };

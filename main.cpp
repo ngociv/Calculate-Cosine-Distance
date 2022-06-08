@@ -2,6 +2,12 @@
 //by Nguyen Van Ngoc
 //time complexity : O(n)
 
+//idea: use an unordered_map
+//each vocabulary of words in 2 documents will be keys of unordered_map
+//value of unordered_map is a struct called Frequency
+//this struct has 2 fields, store the frequency of "key" in 2 documents
+//then calculate cosine distance according to formula
+
 
 #include <iostream>
 #include <cmath>
