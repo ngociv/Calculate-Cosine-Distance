@@ -1,3 +1,8 @@
+//program to calculate cosine distance of two documents
+//by Nguyen Van Ngoc
+//time complexity : O(n)
+
+
 #include <iostream>
 #include <cmath>
 #include "GlobalVariable.h"
